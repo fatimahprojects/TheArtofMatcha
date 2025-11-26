@@ -1,5 +1,5 @@
 body {
-    background-color: #F4F1EE;
+    background-color: #ffeccc;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -47,7 +47,12 @@ body {
 .main-nav a:hover {
     background-color: #588157;
 }
-h1, h2 {
+h1 {
+    color: #ffeccc;
+    text-align: center;
+    margin: 10px 0;
+}
+h2 {
     color: #588157;
     text-align: center;
     margin: 10px 0;
