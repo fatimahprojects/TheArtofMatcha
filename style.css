@@ -175,13 +175,16 @@ footer {
     color: #4A7C59;
     margin-bottom: 8px;
 }
-
-.recipes-grid p {
+.recipe-description {
     font-size: 14px;
-    color: #333333;
+    color: black;
     line-height: 1.6;
     text-align: left;
-    padding: 0 15px;
+    padding: 10px 15px;
+    background-color: #F4F1EE;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top: -10px;
 }
 
 .gallery-grid {
@@ -247,11 +250,12 @@ footer {
         color: #A3B18A;
         font-size: 16px;
     }
-    .recipes-grid p {
+    .recipe-description {
+        background-color: #333333;
+        border-color: #555555;
         color: white;
-        font-size: 15px;
+        font-size: 15px
     }
-}
 @media (max-width: 480px) {
     h1 {
         font-size: 24px;
