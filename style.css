@@ -1,5 +1,5 @@
 body {
-    background-color: #fff0d6;
+    background-color: #fbfff2;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -97,7 +97,8 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(74,124,89,0.7);
-    color: white;font-weight: bold;
+    color: white;
+    font-weight: bold;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -112,6 +113,7 @@ footer {
     right: 20px;
     background-color: #4A7C59;
     color: #fff;
+    font-weight: bold;
     border: none;
     padding: 10px 15px;
     font-size: 20px;
@@ -128,11 +130,11 @@ footer {
 .intro-text {
     text-align: center;
     padding: 20px;
-    color: #333;
+    color: black;
 }
 
 .intro-text h2 {
-    color: #588157;
+    color: #8ab344;
     margin-bottom: 10px;
 }
 
@@ -164,13 +166,13 @@ footer {
 }
 .recipes-grid figcaption {
     font-weight: bold;
-    color: #4A7C59;
+    color: #7cb320;
     margin-bottom: 8px;
 }
 
 .recipes-grid p {
     font-size: 14px;
-    color: #333;
+    color: black;
     line-height: 1.6;
     text-align: left;
     padding: 0 15px;
@@ -205,7 +207,7 @@ footer {
 
 .gallery-grid figcaption {
     font-weight: bold;
-    color: #4A7C59;
+    color: #f1f7e6;
 }
 @media (prefers-color-scheme: dark) {
     body {
