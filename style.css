@@ -139,3 +139,21 @@ footer {
         border-radius: 0;
     }
 }
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF6F61;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background-color: #0288D1;
+}
