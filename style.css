@@ -4,24 +4,21 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .skip-link {
-    position: absolute;
-    top: -40px;
-    left: 10px;
+    position: static;
+    display: inline-block;
+    margin-left: 15px;
     background-color: #A3B18A;
     color: #fff;
     padding: 8px 12px;
     text-decoration: none;
     border-radius: 5px;
-    transition: top 0.3s;
-    z-index: 1000;
+    font-weight: bold;
 }
 
-.skip-link:focus {
-    top: 10px;
+.skip-link:hover {
+    background-color: #588157;
 }
-
 .site-header, footer {
     background-color: #4A7C59;
     color: #fff;
