@@ -1,21 +1,28 @@
 body {
-  background-color: rgb(46, 102, 46);
+  background-color: #FFF8E7;
 }
-h1 , h2 {
-  background-color: rgba(245, 245, 220, 0.726);
+
+h1, h2 {
+  background-color: #FF6F61;
   text-align: center;
-  color: rgb(9, 113, 9);
+  color: #FFFFFF;
 }
+
 a:link, a:visited {
   text-decoration: none;
-  background-color: rgb(245, 245, 220, 0.726);
+  background-color: #4FC3F7;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
+
 li {
-  color: white;
+  color: #333333;
   font-weight: bold;
   font-size: 18px;
   gap: 10px;
 }
+
 img {
   margin: 10px;
   width: 300px;
@@ -23,8 +30,9 @@ img {
   border-radius: 10px;
 }
 p {
-  color: white;
+  color: #333333;
 }
+
 .carousel {
     position: relative;
     max-width: 100%;
@@ -46,12 +54,55 @@ p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(255,111,97,0.7);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
     font-size: 24px;
 }
+
 .prev { left: 10px; }
 .next { right: 10px; }
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #f5f5f5;
+    }
+    h1, h2 {
+        background-color: #333333;
+        color: #FFEB3B;
+    }
+    a:link, a:visited {
+        background-color: #555555;
+        color: #FFEB3B;
+    }
+    p {
+        color: #f5f5f5;
+    }
+    .carousel button {
+        background-color: rgba(255,255,255,0.3);
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .slides img {
+        border-radius: 8px;
+    }
+}
+@media (min-width: 772px) and (max-width: 991px) {
+    .slides img {
+        border-radius: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .slides img:nth-child(3n) {
+        border-radius: 0;
+    }
+}
