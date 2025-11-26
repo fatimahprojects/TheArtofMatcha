@@ -157,6 +157,13 @@ footer {
     gap: 15px;
     padding: 20px;
 }
+.recipe-card {
+    background-color: #FFFFFF;
+    border: 2px solid #CCCCCC;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
 
 .recipes-grid figure {
     background-color: #FFFFFF;
@@ -264,6 +271,38 @@ footer {
         color: #FFFFFF;
         font-size: 15px;
     }
+.recipe-card {
+        background-color: #333333;
+        border-color: #555555;
+        color: #FFFFFF;
+}
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .gallery-grid, .recipes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 772px) {
+    .gallery-grid, .recipes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-grid figure:last-child,
+    .recipes-grid figure:last-child {
+        grid-column: span 2;
+    }
+    .gallery-grid img, .recipes-grid img {
+        border-radius: 50%;
+    }
+    .recipes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media (min-width: 992px) {
     .gallery-grid, .recipes-grid {
@@ -275,5 +314,8 @@ footer {
     }
     .gallery-grid img, .recipes-grid img {
         border-radius: 0;
+    }
+    .recipes-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
