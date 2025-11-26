@@ -23,7 +23,6 @@ if (nextBtn && prevBtn && slides) {
     });
 }
 
-
 const scrollTopBtn = document.getElementById('scrollTopBtn');
 
 if (scrollTopBtn) {
