@@ -276,27 +276,31 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-    .gallery-grid {
+    .gallery-grid, .recipes-grid {
         grid-template-columns: 1fr;
     }
 }
-
-@media (min-width: 772px) and (max-width: 991px) {
-    .recipes-grid {
+@media (min-width: 772px) {
+    .gallery-grid, .recipes-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .gallery-grid figure:last-child,
+    .recipes-grid figure:last-child {
+        grid-column: span 2;
+    }
+    .gallery-grid img, .recipes-grid img {
+        border-radius: 50%;
     }
 }
 @media (min-width: 992px) {
-    .recipes-grid {
+    .gallery-grid, .recipes-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+    .gallery-grid figure:nth-child(3n),
     .recipes-grid figure:nth-child(3n) {
         grid-column: span 2;
     }
-    .gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .gallery-grid img, .recipes-grid img {
+        border-radius: 0;
     }
 }
