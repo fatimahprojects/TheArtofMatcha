@@ -27,7 +27,12 @@ body {
     color: #FFFFFF;
     padding: 15px;
 }
-
+.main-nav img {
+    width: 10%;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 8px;
+}
 .main-nav ul {
     display: flex;
     justify-content: center;
