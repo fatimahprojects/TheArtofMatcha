@@ -27,18 +27,11 @@ body {
     color: #FFFFFF;
     padding: 15px;
 }
-.main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
 .main-nav img {
-    width: 50px;
+    width: 10%;
     height: auto;
+    margin-right: 15px;
     border-radius: 8px;
-    margin-left: 20px;
 }
 .main-nav ul {
     display: flex;
