@@ -9,7 +9,7 @@ body {
     display: inline-block;
     margin-left: 15px;
     background-color: #A3B18A;
-    color: #fff;
+    color: white;
     padding: 8px 12px;
     text-decoration: none;
     border-radius: 5px;
@@ -21,7 +21,7 @@ body {
 }
 .site-header, footer {
     background-color: #4A7C59;
-    color: #fff;
+    color: white;
     padding: 15px;
 }
 
@@ -53,9 +53,10 @@ h1 {
     margin: 10px 0;
 }
 h2 {
-    color: #588157;
+    color: #8ab344;
     text-align: center;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 p {
@@ -63,11 +64,13 @@ p {
     line-height: 1.6;
     text-align: left;
     padding: 0 20px;
+    font-weight: bold;
 }
 
 footer {
     color: white;
     text-align: left;
+    font-weight: bold;
     padding-left: 20px;
 }
 
@@ -94,7 +97,7 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(74,124,89,0.7);
-    color: white;
+    color: white;font-weight: bold;
     border: none;
     padding: 10px;
     cursor: pointer;
