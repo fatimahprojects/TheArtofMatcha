@@ -298,7 +298,7 @@ footer {
         grid-column: span 2;
     }
     .gallery-grid img, .recipes-grid img {
-        border-radius: 50%;
+        border-radius: 10px;
     }
 }
 
