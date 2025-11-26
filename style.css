@@ -22,7 +22,7 @@ body {
 }
 
 .site-header {
-    background-color: #FF6F61;
+    background-color: #4A7C59;
     color: #fff;
     text-align: center;
     padding: 15px;
@@ -38,7 +38,7 @@ body {
 
 .main-nav a {
     text-decoration: none;
-    background-color: #4FC3F7;
+    background-color: #A3B18A;
     color: #fff;
     padding: 8px 12px;
     border-radius: 5px;
@@ -46,11 +46,12 @@ body {
 }
 
 .main-nav a:hover {
-    background-color: #0288D1;
+    background-color: #588157;
 }
 
 h1, h2 {
     margin: 10px 0;
+    color: #588157;
 }
 
 p {
@@ -181,7 +182,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #FF6F61;
+    background-color: #4A7C59;
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -193,7 +194,7 @@ footer {
 }
 
 #scrollTopBtn:hover {
-    background-color: #0288D1;
+    background-color: #588157;
 }
 .intro-text {
     text-align: center;
