@@ -1,5 +1,5 @@
 body {
-    background-color: #FFF8E7;
+    background-color: #F4F1EE;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,24 +9,25 @@ body {
     position: absolute;
     top: -40px;
     left: 10px;
-    background-color: #4FC3F7;
+    background-color: #A3B18A;
     color: #fff;
     padding: 8px 12px;
     text-decoration: none;
     border-radius: 5px;
     transition: top 0.3s;
+    z-index: 1000;
 }
 
 .skip-link:focus {
     top: 10px;
 }
 
-.site-header {
+.site-header, footer {
     background-color: #4A7C59;
     color: #fff;
-    text-align: center;
     padding: 15px;
 }
+
 .main-nav ul {
     display: flex;
     justify-content: center;
@@ -43,22 +44,30 @@ body {
     padding: 8px 12px;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .main-nav a:hover {
     background-color: #588157;
 }
-
 h1, h2 {
-    margin: 10px 0;
     color: #588157;
+    text-align: center;
+    margin: 10px 0;
 }
 
 p {
     color: #333;
     line-height: 1.6;
-    padding: 0 15px;
+    text-align: left;
+    padding: 0 20px;
 }
+
+footer {
+    text-align: left;
+    padding-left: 20px;
+}
+
 .carousel {
     position: relative;
     max-width: 100%;
@@ -74,110 +83,23 @@ p {
     width: 100%;
     flex-shrink: 0;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 0;
 }
 
 .carousel button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255,111,97,0.7);
+    background-color: rgba(74,124,89,0.7);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
     font-size: 24px;
 }
+
 .prev { left: 10px; }
 .next { right: 10px; }
-
-footer {
-    background-color: #FF6F61;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: sticky;
-    bottom: 0;
-}
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212;
-        color: #f5f5f5;
-    }
-    .site-header, footer {
-        background-color: #333;
-    }
-    .main-nav a {
-        background-color: #555;
-        color: #FFEB3B;
-    }
-    p {
-        color: #f5f5f5;
-    }
-    .carousel button {
-        background-color: rgba(255,255,255,0.3);
-    }
-    .recipes-grid figure {
-        background-color: #333;
-        border-color: #555;
-    }
-    .recipes-grid figcaption {
-        color: #FFEB3B;
-    }
-    .recipes-grid p {
-        color: #f5f5f5;
-    }
-}
-@media (max-width: 480px) {
-    h1 {
-        font-size: 24px;
-    }
-    .slides img {
-        border-radius: 8px;
-    }
-    .main-nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (min-width: 772px) and (max-width: 991px) {
-    .slides img {
-        border-radius: 50%;
-    }
-    .recipes-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .recipes-grid img {
-        border-radius: 50%;
-    }
-    .gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-@media (min-width: 992px) {
-    .slides img:nth-child(3n) {
-        border-radius: 0;
-    }
-    .recipes-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .recipes-grid figure:nth-child(3n) {
-        grid-column: span 2;
-    }
-    .recipes-grid img {
-        border-radius: 0;
-    }
-    .gallery-grid figure {
-        background-color: #333;
-        border-color: #555;
-    }
-    .gallery-grid figcaption {
-        color: #FFEB3B;
-    }
-}
 #scrollTopBtn {
     position: fixed;
     bottom: 20px;
@@ -196,6 +118,7 @@ footer {
 #scrollTopBtn:hover {
     background-color: #588157;
 }
+
 .intro-text {
     text-align: center;
     padding: 20px;
@@ -203,7 +126,7 @@ footer {
 }
 
 .intro-text h2 {
-    color: #FF6F61;
+    color: #588157;
     margin-bottom: 10px;
 }
 
@@ -215,7 +138,7 @@ footer {
 }
 
 .recipes-grid figure {
-    background-color: #FFF8E7;
+    background-color: #F4F1EE;
     border: 2px solid #ccc;
     border-radius: 10px;
     padding: 15px;
@@ -226,16 +149,16 @@ footer {
 .recipes-grid figure:hover {
     transform: scale(1.03);
 }
+
 .recipes-grid img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
 }
-
 .recipes-grid figcaption {
     font-weight: bold;
-    color: #FF6F61;
+    color: #4A7C59;
     margin-bottom: 8px;
 }
 
@@ -243,7 +166,10 @@ footer {
     font-size: 14px;
     color: #333;
     line-height: 1.6;
+    text-align: left;
+    padding: 0 15px;
 }
+
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -252,7 +178,7 @@ footer {
 }
 
 .gallery-grid figure {
-    background-color: #FFF8E7;
+    background-color: #F4F1EE;
     border: 2px solid #ccc;
     border-radius: 10px;
     padding: 10px;
@@ -273,5 +199,70 @@ footer {
 
 .gallery-grid figcaption {
     font-weight: bold;
-    color: #FF6F61;
+    color: #4A7C59;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #f5f5f5;
+    }
+    .site-header, footer {
+        background-color: #333;
+    }
+    .main-nav a {
+        background-color: #555;
+        color: #FFEB3B;
+    }
+    a {
+        color: #4FC3F7;
+    }
+    a:hover {
+        color: #FFEB3B;
+    }
+    h1, h2 {
+        color: #FFEB3B;
+    }
+    p {
+        color: #f5f5f5;
+    }
+    .recipes-grid figure, .gallery-grid figure {
+        background-color: #333;
+        border-color: #555;
+    }
+    .recipes-grid figcaption, .gallery-grid figcaption {
+        color: #A3B18A;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 772px) and (max-width: 991px) {
+    .recipes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 992px) {
+    .recipes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .recipes-grid figure:nth-child(3n) {
+        grid-column: span 2;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
