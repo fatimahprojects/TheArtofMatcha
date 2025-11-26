@@ -76,16 +76,14 @@ p {
     padding: 0 20px;
     font-weight: normal;
 }
-
 footer {
     background-color: #71AD68;
-    color: #000000;
+    color: #FFFFFF;
     font-weight: bold;
     text-align: left;
     padding: 15px;
     padding-left: 20px;
 }
-
 .carousel {
     position: relative;
     max-width: 100%;
@@ -287,8 +285,10 @@ footer {
     }
     .gallery-grid, .recipes-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
+
 @media (min-width: 772px) {
     .gallery-grid, .recipes-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -300,10 +300,8 @@ footer {
     .gallery-grid img, .recipes-grid img {
         border-radius: 50%;
     }
-    .recipes-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
+
 @media (min-width: 992px) {
     .gallery-grid, .recipes-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -314,8 +312,5 @@ footer {
     }
     .gallery-grid img, .recipes-grid img {
         border-radius: 0;
-    }
-    .recipes-grid {
-        grid-template-columns: repeat(3, 1fr);
     }
 }
