@@ -216,10 +216,13 @@ footer {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #121212;
-        color: #FFFFFF;
+        color: white;
     }
     .site-header, footer {
         background-color: #333333;
+    }
+    p {
+        color: white;
     }
     .main-nav a {
         background-color: #555555;
@@ -243,7 +246,7 @@ footer {
         font-size: 16px;
     }
     .recipes-grid p {
-        color: #FFFFFF;
+        color: white;
         font-size: 15px;
     }
 }
