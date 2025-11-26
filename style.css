@@ -116,6 +116,16 @@ footer {
     .carousel button {
         background-color: rgba(255,255,255,0.3);
     }
+    .recipes-grid figure {
+        background-color: #333;
+        border-color: #555;
+    }
+    .recipes-grid figcaption {
+        color: #FFEB3B;
+    }
+    .recipes-grid p {
+        color: #f5f5f5;
+    }
 }
 @media (max-width: 480px) {
     h1 {
@@ -133,9 +143,24 @@ footer {
     .slides img {
         border-radius: 50%;
     }
+    .recipes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .recipes-grid img {
+        border-radius: 50%;
+    }
 }
 @media (min-width: 992px) {
     .slides img:nth-child(3n) {
+        border-radius: 0;
+    }
+    .recipes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .recipes-grid figure:nth-child(3n) {
+        grid-column: span 2;
+    }
+    .recipes-grid img {
         border-radius: 0;
     }
 }
@@ -156,4 +181,52 @@ footer {
 
 #scrollTopBtn:hover {
     background-color: #0288D1;
+}
+.intro-text {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+.intro-text h2 {
+    color: #FF6F61;
+    margin-bottom: 10px;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+}
+
+.recipes-grid figure {
+    background-color: #FFF8E7;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.recipes-grid figure:hover {
+    transform: scale(1.03);
+}
+.recipes-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.recipes-grid figcaption {
+    font-weight: bold;
+    color: #FF6F61;
+    margin-bottom: 8px;
+}
+
+.recipes-grid p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
 }
