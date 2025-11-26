@@ -234,18 +234,19 @@ footer {
     h1, h2 {
         color: #FFEB3B;
     }
-    p {
-        color: #FFFFFF;
-    }
     .recipes-grid figure, .gallery-grid figure {
         background-color: #333333;
         border-color: #555555;
     }
     .recipes-grid figcaption, .gallery-grid figcaption {
         color: #A3B18A;
+        font-size: 16px;
+    }
+    .recipes-grid p {
+        color: #FFFFFF;
+        font-size: 15px;
     }
 }
-
 @media (max-width: 480px) {
     h1 {
         font-size: 24px;
