@@ -195,7 +195,6 @@ footer {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 15px;
     padding: 20px;
 }
@@ -278,6 +277,7 @@ footer {
         gap: 10px;
     }
     .gallery-grid, .recipes-grid {
+        display: grid;
         grid-template-columns: 1fr !important;
         gap: 15px;
     }
