@@ -270,9 +270,8 @@ footer {
 }
 }
 @media (max-width: 767px) {
-  .gallery-grid,
-  .recipes-grid {
-    grid-template-columns: 1fr !important;
+  .gallery-grid, .recipes-grid {
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 768px) and (max-width: 990px) {
