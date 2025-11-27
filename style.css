@@ -270,9 +270,20 @@ footer {
 }
 }
 @media (max-width: 767px) {
-  .gallery-grid, .recipes-grid {
-    grid-template-columns: 1fr;
-  }
+  h1 {
+        font-size: 24px;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .gallery-grid, .recipes-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+    .gallery-grid img, .recipes-grid img {
+        border-radius: 10px !important;
+    }
 }
 @media (min-width: 768px) and (max-width: 990px) {
   .gallery-grid,
