@@ -269,14 +269,13 @@ footer {
         color: #FFFFFF;
 }
 }
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .gallery-grid,
   .recipes-grid {
     grid-template-columns: 1fr !important;
   }
 }
-
-@media (min-width: 767px) and (max-width: 990px) {
+@media (min-width: 768px) and (max-width: 990px) {
   .gallery-grid,
   .recipes-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -287,7 +286,6 @@ footer {
     border-radius: 10px;
   }
 }
-
 @media (min-width: 991px) {
   .gallery-grid,
   .recipes-grid {
