@@ -282,11 +282,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .gallery-grid figure:last-child,
-  .recipes-grid figure:last-child {
-    grid-column: span 2;
-  }
-
   .gallery-grid img,
   .recipes-grid img {
     border-radius: 10px;
@@ -297,11 +292,6 @@ footer {
   .gallery-grid,
   .recipes-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .gallery-grid figure:nth-child(3n),
-  .recipes-grid figure:nth-child(3n) {
-    grid-column: span 2;
   }
 
   .gallery-grid img,
